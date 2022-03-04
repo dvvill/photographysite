@@ -1,0 +1,161 @@
+/* ===================================== 
+   Page Styles
+======================================== */
+
+* {
+	box-sizing: border-box;
+}
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+header {
+  text-align: left;
+  color: black;
+}
+
+#name{
+  text-decoration: none;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: none;
+  }
+
+  .header-name{
+    text-decoration: none;
+    color: black;
+  }
+nav {
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    height: 100%;
+    overflow: auto;
+}
+
+.nav-item{
+    display: block;
+    color: black;
+    margin-top: 20px;
+    padding: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.nav-projects{
+  text-decoration: none;
+  color: black;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content{
+      display: none;
+      position: absolute;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+  }
+  /* Links inside the dropdown */
+  .dropdown-content a{
+      text-decoration: none;
+      display: block;
+      color: black;
+  }
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: gray;
+    color: white;
+  }
+
+  /* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  a:hover {
+    color: gray;
+  }
+
+.container{
+    border: none;
+}
+
+ /* The overlay effect - lays on top of the container and over the image */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  /* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+    opacity: 1;
+  }
+
+
+
+/* ================
+     CSS Layout
+   ================= */
+
+   .grid-container{
+       height: 100vh;
+       display: grid;
+       grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+       grid-template-columns: 2fr 1fr 2fr 1fr;
+       grid-gap: 5px;
+       grid-template-areas:
+            "header header header header"
+            "nav . pic1 ."
+            "nav . pic2 ."
+            "nav . pic3 ."
+            "footer footer footer footer" ;
+   }
+
+   header{
+       grid-area: header;
+   }
+
+   nav{
+       grid-area: nav;
+   }
+
+   .pic1-container{
+       grid-area: pic1;
+   }
+
+   .pic2-container{
+       grid-area: pic2;
+   }
+
+   .pic3-container{
+       grid-area: pic3;
+   }
+
+   footer{
+       grid-area: footer;
+   }

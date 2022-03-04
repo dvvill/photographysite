@@ -1,0 +1,60 @@
+.grid-container{
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr 2fr;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+    "header header header header header"
+    "nav img-1 img-1 img-2 img-2"
+    "nav img-3 img-3 img-4 img-4"
+    "nav . . . .";
+}
+
+.header{
+    grid-area: header;
+}
+
+.Nav{
+    grid-area: nav;
+}
+
+.header-name{
+    text-decoration: none;
+    color: black;
+  }
+
+.fashion-img1{
+    grid-area: img-1;
+    margin-left: 10%;
+}
+
+.fashion-img2{
+    grid-area: img-2;
+    margin-right: 10%;
+}
+
+.fashion-img3{
+    grid-area: img-3;
+    margin-left: 10%;
+}
+
+.fashion-img4{
+    grid-area: img-4;
+    margin-right: 10%;
+}
+
+/*=============
+    STYLES
+==============*/
+
+.nav-projects{
+    text-decoration: none;
+    color: black;
+}
+
+/*=============
+    EFFECTS
+==============*/
+
+a:hover{
+    color: gray;
+}

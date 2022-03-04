@@ -1,0 +1,52 @@
+.about-grid{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    grid-template-areas: 
+        "header header header header header"
+        "nav . pic-profile . ."
+        "nav . about-text . .";
+}
+
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+}
+
+.header-name{
+    text-decoration: none;
+    color: black;
+  }
+
+.profile-pic{
+    grid-area: pic-profile;
+}
+
+.about-section{
+    grid-area: about-text;
+    margin-top: 4%;
+}
+
+.about-heading{
+    margin-bottom: 2%;
+}
+
+/*============
+    STYLES
+=============*/
+.nav-projects{
+    text-decoration: none;
+    color: black;
+}
+
+/*=============
+ EFFECTS
+ =============*/
+
+ a:hover{
+     color: gray;
+ }
